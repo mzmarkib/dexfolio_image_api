@@ -51,6 +51,9 @@ app.post("/", async (req, res) => {
 	})
 		.then(() => console.log("The images were created successfully!"))
 		.catch((error) => {
+			console.log(
+				"FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+			);
 			console.log(error);
 		});
 
