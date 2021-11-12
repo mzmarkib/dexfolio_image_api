@@ -48,12 +48,10 @@ app.post("/", async (req, res) => {
 			token_name_color: token_name_color,
 			status_string: status_string,
 		},
+		puppeteerArgs: { args: ["--no-sandbox"] },
 	})
 		.then(() => console.log("The images were created successfully!"))
 		.catch((error) => {
-			console.log(
-				"FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
-			);
 			console.log(error);
 		});
 
