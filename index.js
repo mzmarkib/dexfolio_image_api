@@ -49,11 +49,11 @@ app.post("/", async (req, res) => {
 			status_string: status_string,
 		},
 		puppeteerArgs: { args: ["--no-sandbox"] },
-	})
-		.then(() => console.log("The images were created successfully!"))
-		.catch((error) => {
-			console.log(error);
-		});
+	});
+	// .then(() => console.log("The images were created successfully!"))
+	// .catch((error) => {
+	// 	console.log(error);
+	// });
 
 	res.writeHead(200, { "Content-Type": "image/png" });
 	res.end(image, "binary");
