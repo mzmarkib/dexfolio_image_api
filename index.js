@@ -48,7 +48,7 @@ app.post("/", async (req, res) => {
 			token_name_color: token_name_color,
 			status_string: status_string,
 		},
-	});
+	}).then(() => console.log("The images were created successfully!"));
 
 	res.writeHead(200, { "Content-Type": "image/png" });
 	res.end(image, "binary");
